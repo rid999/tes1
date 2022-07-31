@@ -1,7 +1,7 @@
-#!/bin/bash
-#PROMPT SCRIPT BY RID999
-#YOU CAN MODIFY AS YOU LIKE WITH PROMPT QUESTION OR COMMAND
-
+#####################################################################
+###########PROMPT SCRIPT BY RID999###################################
+##YOU CAN MODIFY AS YOU LIKE WITH PROMPT QUESTION OR COMMAND#########
+#####################################################################
 
 #mainmenu function
 mainmenu () {
@@ -27,7 +27,9 @@ menu2()
 {
 echo "silahkan masukkan nama website untuk dig domain"
 read input
-dig $input;
+dig +short mx $input;
+whois $input;
+
 }
 
 menu3()
