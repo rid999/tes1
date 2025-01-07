@@ -46,7 +46,7 @@ EOF
 # Make the setup script executable
 chmod +x $PREFIX/bin/ubuntu-setup
 
-# Create instructions for first run
+# Print instructions
 echo "Installation completed!"
 echo "To start Ubuntu with X11 support, follow these steps:"
 echo "1. Run 'ubuntu-setup' in Termux"
